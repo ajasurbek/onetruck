@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truck</title>
+  <link rel="manifest" href="/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">   
+</head>
+<body class="body  body--nojs">
+  
+  <header class="header header--nojs header__truck">
+    
+    <div class="container header__container header__bottom">
+      <div class="header__bottom-mobile another">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="img/header-logo.svg" alt="Truck logo" width="100" height="53">
+        </a>
+        
+      </div>
+      <div class="header__bottom-lists">
+        
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link active" href="index.html">Bosh sahifa</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Buyurtma berish</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Korporativ buyurtma</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="driver.html">Haydovchilar uchun</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="header__nav-wrapper">
+        <form class="form__search" action="https://echo.htmlacademy.ru" method="post">
+          <input class="search__form" type="text" name="driver_"  placeholder="Поиск">
+        </form>
+        <a class="header__link-phone" href="tel:+998742240606">Aloqa uchun</a>
+        <div class="header__buttons">
+          <button class="header__button">
+            uz
+          </button>
+        </div>
+        <img src="img/user-img.svg" alt="user" class="header__img-user" width="42" height="42">
+        
+      </div>
+      <button class="header__button-toggler" type="button" aria-label="toggler button"></button>
+    </div>
+    
+  </header> <!-- End of header -->
+  
+  <main class="driver__main">
+    <section class="driver__slider">
+      <div class="slider__section container">
+        <div class="wrapper">
+          
+          <div class="slider">
+            <div class="slider__item filter">
+              <img class="img_slider-drive" src="./img/Group1.png" alt="img__slider">
+            </div>
+            
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group2.png" alt="img__slider">
+              
+            </div>
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group3.png" alt="img__slider">
+              
+            </div>
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group4.png" alt="img__slider">
+              
+            </div>
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group5.png" alt="img__slider">
+              
+            </div>
+            
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group6.png" alt="img__slider">
+              
+            </div>
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group7.png" alt="img__slider">
+              
+            </div>
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group8.png" alt="img__slider">
+              
+            </div>
+            <div class="slider__item">
+              <img class="img_slider-drive" src="./img/Group9.png" alt="img__slider">
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="driver__form">
+      <div class="driver__form-section container">
+        <div class="driver__form-wrapper">
+          <h3 class="driver__form-wrapper-heading">
+            Ro’yxatdan o’tish
+          </h3>
+          <!-- action="/mainform" method="post" -->
+          <form 
+          action="https://echo.htmlacademy.ru" method="POST"
+          class="driver__form-main">
+          <div class="driver__form-wrapper-form">
+            <div class="driver__form-wrapper-form-first">
+              <input class="driver__form-input js_fio" name="driver_fio"  placeholder="FIO" type="text">
+              <input class="driver__form-input js_pasport" name="driver_passport_seriya"  placeholder="Pasport seriya" type="text">
+              <select class="driver__form-input js_viloyat"  aria-label="Viloyat tanlang" required>
+                <option value="Viloyat" selected disabled>Viloyat</option>
+                <option value="Andijon">Andijon</option>
+              </select>
+              <input class="driver__form-input js_guvohnoma" name="driver_guvohnoma"  placeholder="Guvohnoma" type="text">
+            </div>
+            <div class="driver__form-wrapper-form-second">
+              <input class="driver__form-input js_litsenziya" name="driver_litsenziya"  placeholder="Litsenziya" type="text">
+              <input class="driver__form-input js_tex-pasport" name="driver_tex_pasporti"  placeholder="Tex pasporti" type="text">
+              <input class="driver__form-input js_ishonchnoma" name="driver_ishonchnoma"  placeholder="Ishonchnoma" type="text">
+              <input class="driver__form-input js_lizing" name="driver_lizing"  placeholder="Lizing" type="text">
+            </div>
+            
+            <div class="driver__form-wrapper-form-third">
+              <input class="driver__form-input js_trans_raqam" name="driver_transport _raqami"  placeholder="Transport raqami" type="text">
+              <input class="driver__form-input js_tel_raqam" name="driver_telefon_raqami"  placeholder="Telefon raqami" type="text">
+              <select class="driver__form-input js_tans_tanlang" name="car"   aria-label="Transport turi tanlang" onchange="getSelectValue();"required>
+                <option value="" selected disabled>Transport turi</option>
+                
+              </select>
+              <label class="check" for="Shartlarni qabul qilaman">
+                <input class="check_input" type="checkbox" name="xa">
+                Shartlarni qabul qilaman
+              </label>
+            </div>
+          </div>
+          <button class="driver__form-btn js_btn-driver" type="submit">Ro’yxatdan o’tish</button>
+        </form>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+</main>
+
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__first-column">
+      <div class="footer__first-left">
+        <h4 class="footer__first-heading footer__heading">
+          Biz bilan bog`lanish
+        </h4>
+        <p class="footer__address footer__icon icon__location">Farg’ona, Yuksalish 195</p>
+        <div class="footer__support">
+          <span class="footer__support-text footer__icon icon__headphone">
+            Qo’llab quvvatlash markazi:
+          </span>
+          <a class="footer__support-phone" href="tel:1055">1055</a>,
+          <a class="footer__support-phone" href="tel:+998335109595">+99833 510-95-95</a>
+        </div>
+        <div class="footer__workingdays">
+          <p class="footer__workingdays-text footer__icon icon__workingdays">
+            Dush - Juma <span class="workingdays-yellow">(9:00 - 17:00)</span> , Shanba <span
+            class="workingdays-yellow">(9:00 - 15:00)</span>
+          </p>
+        </div>
+        <p class="foooter__email footer__icon icon__email">info@track.uz</p>
+      </div>
+      
+      
+      <div class="footer__first-right">
+        <h4 class="footer__second-heading footer__heading">
+          Menyu
+        </h4>
+        <ul class="footer__list-nav">
+          <li class="footer__item-nav">
+            <a class="footer__link-nav footer__link" href="#">Bosh sahifa</a>
+          </li>
+          <li class="footer__item-nav">
+            <a class="footer__link-nav footer__link" href="#">Haydovchilar uchun</a>
+          </li>
+          <li class="footer__item-nav">
+            <a class="footer__link-nav footer__link" href="#">Biznes uchun</a>
+          </li>
+          <li class="footer__item-nav">
+            <a class="footer__link-nav footer__link" href="#">Chet elga yuk tashish</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="footer__second-col">
+      
+      <div class="footer__second-left">
+        <h4 class="footer__second-heading footer__heading">
+          Yordam
+        </h4>
+        <ul class="footer__list-help">
+          <li class="footer__item-help">
+            <a class="footer__link-help footer__link" href="#">Asosiy savollar</a>
+          </li>
+          <li class="footer__item-help">
+            <a class="footer__link-help footer__link" href="#">Jo`natmalar holati</a>
+          </li>
+          <li class="footer__item-help">
+            <a class="footer__link-help footer__link" href="#">To`lov uslublari</a>
+          </li>
+          <li class="footer__item-help">
+            <a class="footer__link-help footer__link" href="#">Yuk mashinalar turlari</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer__mobile-wrapper">
+        <ul class="footer__mobile-list-social">
+          <li class="footer__mobile-item-social icon__facebook">
+            <a class="footer__mobile-link-icon" href="#"><img class="footer__mobile-img-icon" src="img/facebook.svg"
+              alt="icon"></a>
+            </li>
+            <li class="footer__mobile-item-social icon__instagram">
+              <a class="footer__mobile-link-icon" href="#"><img class="footer__mobile-img-icon" src="img/instagram.svg"
+                alt="icon"></a>
+              </li>
+              <li class="footer__mobile-item-social icon__telegram">
+                <a class="footer__mobile-link-icon" href="#"><img class="footer__mobile-img-icon" src="img/telegram.svg"
+                  alt="icon"></a>
+                </li>
+                <li class="footer__mobile-item-social icon__author">
+                  <a class="footer__mobile-link-icon" href="#"><img class="footer__mobile-img-icon" src="img/author.svg"
+                    alt="icon"></a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="footer__second-right">
+                <h4 class="footer__second-heading footer__heading">
+                  Ijtimoiy tarmoqlar
+                </h4>
+                <ul class="footer__list-social">
+                  <li class="footer__item-social icon__facebook">
+                    <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/facebook.svg" alt="icon">@truck.uz</a>
+                  </li>
+                  <li class="footer__item-social icon__instagram">
+                    <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/instagram.svg"
+                      alt="icon">@truck_uz</a>
+                    </li>
+                    <li class="footer__item-social icon__telegram">
+                      <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/telegram.svg" alt="icon">@truck_uz</a>
+                    </li>
+                    <li class="footer__item-social icon__author">
+                      <a class="footer__link-social footer__link" href="#"><img class="footer__img-icon" src="img/author.svg" alt="icon">2021 - truckuz</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              
+              
+              
+            </div>
+          </footer> <!-- End of footer -->
+          
+          <div class="dd"  id="myBtn" >
+            <button class="btnn" onclick="topFunction()" >
+              <img class="up-img" src="images/upnew.svg" alt="up img"></button>
+              <a class="tel__icon_top" href="tel:+998335109595">
+                <img class="call-img" src="images/phonenew.svg" alt="call">
+              </a>
+              
+              
+            </div>
+            
+            <script>
+              //Get the button
+              var mybutton = document.getElementById("myBtn");
+              
+              // When the user scrolls down 20px from the top of the document, show the button
+              window.onscroll = function() {scrollFunction()};
+              
+              function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+                } else {
+                  mybutton.style.display = "none";
+                }
+              }
+              
+              // When the user clicks on the button, scroll to the top of the document
+              function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }
+            </script>
+            
+            
+            <!-- ======================= -->
+            
+            <script src="js/apiSelect.js"></script>
+            <script src="my/driverMain.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <!-- Подключаем слайдер Slick -->
+            <script src="js/slick.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="my/main.js"></script>
+            <!-- Подключаем файл скриптов -->
+            <script src="js/sliderDriver.js"></script>
+            
+          </body>
+          
+          </html>
